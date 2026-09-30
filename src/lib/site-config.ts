@@ -12,3 +12,4 @@ export const NAV = [
   { id: "proof", ar: "آراء العملاء", en: "Reviews", href: "/#proof" },
   { id: "contact", ar: "تواصل معنا", en: "Contact", href: "/#contact" },
 ];
+
