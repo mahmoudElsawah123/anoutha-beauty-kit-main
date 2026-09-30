@@ -1,0 +1,204 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * أنوثة (Anotha) — marketing landing design system.
+ * Soft feminine palette: blush, rose, brand pink, deep plum.
+ * All colors in oklch. Never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-display: "Changa", "Cairo", system-ui, sans-serif;
+  --font-sans: "Cairo", system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-blush: var(--blush);
+  --color-blush-foreground: var(--blush-foreground);
+  --color-rose: var(--rose);
+  --color-mist: var(--mist);
+  --color-plum: var(--plum);
+  --color-plum-foreground: var(--plum-foreground);
+  --color-gold: var(--gold);
+  --color-cream: var(--cream);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 1rem;
+
+  --background: oklch(0.988 0.006 20);
+  --foreground: oklch(0.22 0.06 351);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.06 351);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.06 351);
+
+  --primary: oklch(0.62 0.22 355);
+  --primary-foreground: oklch(0.99 0.005 350);
+  --secondary: oklch(0.96 0.022 350);
+  --secondary-foreground: oklch(0.34 0.11 353);
+  --muted: oklch(0.965 0.014 40);
+  --muted-foreground: oklch(0.5 0.045 351);
+  --accent: oklch(0.93 0.045 350);
+  --accent-foreground: oklch(0.3 0.1 353);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.99 0.005 350);
+  --border: oklch(0.925 0.02 350);
+  --input: oklch(0.925 0.02 350);
+  --ring: oklch(0.62 0.22 355);
+
+  --blush: oklch(0.955 0.03 350);
+  --blush-foreground: oklch(0.3 0.1 353);
+  --rose: oklch(0.86 0.075 350);
+  --mist: oklch(0.955 0.018 300);
+  --plum: oklch(0.19 0.055 350);
+  --plum-foreground: oklch(0.97 0.01 350);
+  --gold: oklch(0.78 0.09 78);
+  --cream: oklch(0.975 0.012 75);
+
+  --gradient-brand: linear-gradient(135deg, oklch(0.62 0.22 355), oklch(0.72 0.16 20));
+  --gradient-soft: linear-gradient(
+    160deg,
+    oklch(0.99 0.008 350) 0%,
+    oklch(0.96 0.03 350) 45%,
+    oklch(0.975 0.02 60) 100%
+  );
+  --gradient-plum: linear-gradient(140deg, oklch(0.19 0.055 350), oklch(0.27 0.09 340));
+  --shadow-soft: 0 18px 50px -24px oklch(0.62 0.22 355 / 0.35);
+  --shadow-card: 0 10px 30px -18px oklch(0.4 0.1 350 / 0.28);
+  --shadow-glow: 0 0 0 1px oklch(0.62 0.22 355 / 0.12), 0 24px 70px -30px oklch(0.62 0.22 355 / 0.45);
+
+  --chart-1: oklch(0.62 0.22 355);
+  --chart-2: oklch(0.78 0.09 78);
+  --chart-3: oklch(0.86 0.075 350);
+  --chart-4: oklch(0.7 0.14 20);
+  --chart-5: oklch(0.5 0.12 340);
+
+  --sidebar: oklch(0.99 0.008 350);
+  --sidebar-foreground: oklch(0.22 0.06 351);
+  --sidebar-primary: oklch(0.62 0.22 355);
+  --sidebar-primary-foreground: oklch(0.99 0.005 350);
+  --sidebar-accent: oklch(0.955 0.03 350);
+  --sidebar-accent-foreground: oklch(0.3 0.1 353);
+  --sidebar-border: oklch(0.925 0.02 350);
+  --sidebar-ring: oklch(0.62 0.22 355);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    /* letter-spacing: -0.01em; */
+  }
+}
+
+@utility surface-soft {
+  background-image: var(--gradient-soft);
+}
+
+@utility surface-brand {
+  background-image: var(--gradient-brand);
+  color: var(--color-primary-foreground);
+}
+
+@utility surface-plum {
+  background-image: var(--gradient-plum);
+  color: var(--color-plum-foreground);
+}
+
+@utility text-gradient-brand {
+  background-image: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility shadow-elegant {
+  box-shadow: var(--shadow-soft);
+}
+
+@utility shadow-cardsoft {
+  box-shadow: var(--shadow-card);
+}
+
+@utility shadow-glowsoft {
+  box-shadow: var(--shadow-glow);
+}
+
+@utility section-pad {
+  padding-block: 5rem;
+  @media (min-width: 768px) {
+    padding-block: 7rem;
+  }
+}
+
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-blush);
+  color: var(--color-blush-foreground);
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
