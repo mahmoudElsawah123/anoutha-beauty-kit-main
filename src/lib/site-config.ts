@@ -1,7 +1,7 @@
 export const DEMO_URL =
-  "https://zxjrgo.dev.zid.store/ar/?theme=06f9c9f5-5064-4920-b5a0-d0e3fd0469e1&md_token=Vvi1FKvuEK9pcF6XQbbIUeHVumGmSGDwwLbxZDliCFkd14VxrwOUtxkwO7IeGE4K&previewMode=true";
+  "https://zxjrgo.zid.store/";
 
-export const WHATSAPP_URL = "https://wa.me/966500000000";
+export const WHATSAPP_URL = "https://wa.me/201126233913";
 
 export const NAV = [
   { id: "guide", ar: "دليل التخصيص 📖", en: "Theme Guide 📖", href: "/guide" },

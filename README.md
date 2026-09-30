@@ -746,7 +746,7 @@ Create a comprehensive landing page that:
 The landing page should feel premium, elegant, and professional - matching the aesthetic of the theme itself.
 
 
- دا الرابط https://zxjrgo.dev.zid.store/ar/?theme=06f9c9f5-5064-4920-b5a0-d0e3fd0469e1&md_token=Vvi1FKvuEK9pcF6XQbbIUeHVumGmSGDwwLbxZDliCFkd14VxrwOUtxkwO7IeGE4K&previewMode=true 
+ دا الرابط https://zxjrgo.zid.store/ 
 واتكلم
 عن الاقسام كلها والصقحات والاعدادات العامه دي صوره كامله للهوم home page
 ببعتهالك بس عشان تعرف شكل الاقسام عمله ازي وكمان دي صوره لجزءء من صفحه المنتج

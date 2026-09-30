@@ -113,10 +113,10 @@ export function SiteFooter() {
           <h3 className="text-sm font-semibold">{t({ ar: "تواصل", en: "Contact" })}</h3>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li className="flex items-center gap-2">
-              <Phone className="size-4" /> +966 50 000 0000
+              <Phone className="size-4" /> +201126233913
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="size-4" /> hello@anotha-theme.com
+              <Mail className="size-4" /> hxxcvhh1222@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <MessageCircle className="size-4" />
@@ -127,8 +127,6 @@ export function SiteFooter() {
         <div>
           <h3 className="text-sm font-semibold">{t({ ar: "معلومات نظامية", en: "Legal" })}</h3>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-            <li>{t({ ar: "الرقم الضريبي: ٣٠٠٠٠٠٠٠٠٠٠٠٠٠٣", en: "VAT: 3000000000000003" })}</li>
-            <li>{t({ ar: "السجل التجاري: ١٠١٠٠٠٠٠٠٠", en: "CR: 1010000000" })}</li>
             <li>{t({ ar: "سياسة الاستبدال والإرجاع", en: "Returns policy" })}</li>
           </ul>
         </div>
